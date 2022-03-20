@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal CV</title>
+        <meta charset="utf-8">
+        <meta name='author' content='Minh'>
+        <meta name="description" content="This is page is my blog">
+
+    </head>
+    <body>
+        <header>
+            <div id="header-container">
+                <img src="images/pageLogo.png" alt="Logo">
+                <nav>
+                    <ul id="nav-list">
+                        <li class="nav-items"><a href="index.html">Home</a></li>
+                        <li class="nav-items"><a href="projects.html">Projects</a></li>
+                        <li class="nav-items"><a href="blog.html">Blog</a></li>
+                        <li class="nav-items"><a href="contact.html">Contact me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <hr>
+        <main>
+            <article class="article-container">
+                <h1>What is the bouncing effect found in mechanical button/switches?</h1>
+                <section>
+                    <figure class="img-container">
+                        <img id="boucing-switch" src="images/bouncingSwitch.png" alt="Measure bouncing interval of a switch">
+                        <figcaption>Measure bouncing interval of a switch</figcaption>
+                    </figure>
+                    <p>The bouncing effect is a problem found in mechanical buttons and switches. 
+                        When we press a button or close the switch, the metal parts inside the button/switch have to move to a place where it contacts and closes the circuit.
+                    </p>
+                    <p>
+                         Because the metal parts have the elastic property[2], so they will bounce off the floor several times before it comes to rest. 
+                         This is similar to a basketball when its dropped on the ground
+                    </p>
+                    <h3 class="sub-heading">What are impacts of bouncing effect in digital applications and embedded systems</h3>
+                    <p>
+                        Because it takes milliseconds for the metal parts to settle down to the floor and close the circuit, but the microcontroller can read inputs in microseconds, so it creates button glitches that will send multiple inputs upon a single press. 
+                    </p>
+                    <p>
+                        This would cause logic issues in the real-world embedded systems
+                    </p>
+                    <h3 class="sub-heading">How people measure such effect? </h3>
+                    <p>
+                        We can create a simple circuit consisting of a battery, a resistor, a switch, then use an oscilloscope to measure the voltage when the switch is closed.
+                    </p>
+                </section>
+            </article>
+            <hr>
+            <article class="article-container">
+                <h1>How to make simple color recognition program</h1>
+                <section>
+                    <figure class="img-container">
+                        <img id="color-chip" src="images/colorfulChips.png" alt="colorful chips">
+                        <figcaption>Example image</figcaption>
+                    </figure>
+                    <h3 class="sub-heading">Analysis</h3>
+                    <p>
+                        determine the color of a certain pixel by its RGB value which stands for Red-Green-Blue, a 3 primary colors system for displaying digital color images
+                    </p>
+                    <p>
+                        After that, we have to store it some where in a suitable format for easy manipulation.
+                    </p>
+                    <p>
+                        With this problem, we have to work with the RGB value of pixels. Each pixel has 3 values of Red, Green and Blue from 0 to 255.
+                    </p>
+                    <p>
+                         A combination of these values create different colors like black (R=0, G=0, B=0) or white (R=255, G=255, B=255)
+                    </p>
+                    <h3 class="sub-heading">Apply principle</h3>
+                    <p>We will make a program to change the color we want to black</p>
+                    <p>
+                        In order to change a specific color to another color (black), we have to determine its RGB value and save it in an easy-to-manipulate format.
+                         We can do this by saving the image information into a 3 dimensional array where the x and y coordinates represent the position of the pixel while the z value is the RGB value of that certain pixel.
+                    </p>
+                    <h3 class="sub-heading">Algorithms</h3>
+                    <p>
+                        We first compare the pixel RGB values to the color we want to change. 
+                        For example, we want to change the color blue to black.
+                    </p>
+                    <p>
+                        We compare each pixel RGB value to determine if that pixel is blue or not. If the pixel is blue, we change its RGB value to 0 to make it black.
+                    </p>
+                    <figure class="img-container">
+                        <img id="color-chip-algorithm" src="images/changeColorAlgorithms.png" alt="Flow chart of algorithms">
+                        <figcaption>Flow chart</figcaption>
+                    </figure>
+                </section>
+            </article>
+        </main>
+        <hr>
+        <footer>
+            <div>All right reserved 2022</div>
+            <div id="footer-container">
+                <nav>
+                    <ul id="contact-list">
+                        <li class="contact-items"><a href="https://www.facebook.com/minh.vuviet.75">Facebook</a></li>
+                        <li class="contact-items"><a href="https://www.instagram.com/yusa.namu/">Instagram</a></li>
+                        <li class="contact-items"><a href="https://github.com/minhboro197">Git</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal CV</title>
+        <meta charset="utf-8">
+        <meta name='author' content='Minh'>
+        <meta name="description" content="This is page for my projects">
+
+    </head>
+    <body>
+        <header>
+            <div id="header-container">
+                <img src="images/pageLogo.png" alt="Logo">
+                <nav>
+                    <ul id="nav-list">
+                        <li class="nav-items"><a href="index.html">Home</a></li>
+                        <li class="nav-items"><a href="projects.html">Projects</a></li>
+                        <li class="nav-items"><a href="blog.html">Blog</a></li>
+                        <li class="nav-items"><a href="contact.html">Contact me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <hr>
+        <main>
+            <h1>Projects</h1>
+            <article class="project-container">
+                <h2 class="heading">Automatic Sorting Trashbin</h2>
+                <figure class="img-container">
+                    <img id="trash-bin-bot" src="images/trashbin2.png" alt="3d model of the trash bin">
+                    <figcaption>3D model of the machine</figcaption>
+                </figure>
+                <section class="main-data">
+                    <h3 class="sub-heading">Description</h3>
+                    <p>Different from normal trash bins, there are sensors, motors, microcontroller(Arduino)
+                        integrated into this trash bin to help it sorts garbage.
+                        The entire height of this design is 130 cm, with the perimeter is about 100cm
+                    </p>
+                    <p>
+                        When garbage is thrown into the tunnel, there are some sensors, which scan the object and send 
+                        the signal to the Arduino, then Arduino will identify and drop it to the right bins by rotating the 
+                        tunnel
+                    </p>
+                    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GGjpXlUxeNE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+            </article>
+            <hr>
+            <article class="project-container">
+                <h2 class="heading">Robot dog</h2>
+                <figure class="img-container">
+                    <img id="robot-dog" src="images/RobotDog.png" alt="Side View of the robot">
+                    <figcaption>The robot dog</figcaption>
+                </figure>
+                <section class="main-data">
+                    <h3 class="sub-heading">Description</h3>
+                    <p>
+                        Applying knowledge of ROS, and inverse kinematics, i wrote the control algorithms for the quaruped robot. 
+                    </p>
+                    <p>
+                        The robot is built for the purpose of surveilance, or rescue mission
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7A4HwV-Kj4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+            </article>
+            <hr>
+            <footer>
+                <div>All right reserved 2022</div>
+                <div id="footer-container">
+                    <nav>
+                        <ul id="contact-list">
+                            <li class="contact-items"><a href="https://www.facebook.com/minh.vuviet.75">Facebook</a></li>
+                            <li class="contact-items"><a href="https://www.instagram.com/yusa.namu/">Instagram</a></li>
+                            <li class="contact-items"><a href="https://github.com/minhboro197">Git</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>

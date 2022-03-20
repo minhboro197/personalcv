@@ -10,7 +10,7 @@
     <body>
         <header>
             <div id="header-container">
-                <img src="pageLogo.png" alt="Logo">
+                <img src="images/pageLogo.png" alt="Logo">
                 <nav>
                     <ul id="nav-list">
                         <li class="nav-items"><a href="index.html">Home</a></li>
@@ -23,43 +23,109 @@
         </header>
         <hr>
         <main>
-            <h1>About me:</h1>
-            <section>
-                <h2>Education</h2>
-                <dl>
-                    <dt>RMIT Vietnam</dt>
-                    <dd>I majored in Software Engineer, and pass with Distinction (Honoured) in 2024</dd>
-                    <img src="sgs-campus-night-03.jpg" alt="campus-picture">
-                    <dt>Akira Education</dt>
-                    <dd>I achieved N2 Japanese proficiency in 2024</dd>
+            <h1 class="heading">About me:</h1>
+            <div class="information">
+                <h2 class="sub-heading">Basic Information</h2>
+                <table id="basic-info-table">
+                    <tr class="basic-info-row">
+                        <th class="basic-infor-head">Name</th>
+                        <th class="basic-infor-head">Age</th>
+                        <th class="basic-infor-head">Sex</th>
+                        <th class="basic-infor-head">Nationality</th>
+                        <th class="basic-infor-head">Occupation</th>
+                    </tr>
+                    <tr class="basic-info-row">
+                        <td class="basic-infor-data">Vu Viet Minh</td>
+                        <td class="basic-infor-data">24</td>
+                        <td class="basic-infor-data">Male</td>
+                        <td class="basic-infor-data">Vietnam</td>
+                        <td class="basic-infor-data">Senior student</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="information">
+                <h2 class="sub-heading">Education</h2>
+                <dl class="infor-container">
+                    <dt class="infor-title">RMIT Vietnam</dt>
+                    
+                    <dd class="infor-data">I majored in Software Engineer, and pass with Distinction (Honoured)</dd>
+                    <figure class="img-container">
+                        <img id="rmit-img" src="images/sgs-campus-night-03.jpg" alt="campus-picture">
+                        <figcaption>Rmit Campus</figcaption>
+                    </figure>
+                    
+                    <dt class="infor-title">Akira Education</dt>
+                    <dd class="infor-data">I achieved N2 Japanese proficiency</dd>
+
+                    <figure class="img-container">
+                        <img id="akira-img" src="images/Akira.jpg" alt="Akira class">
+                        <figcaption>Akira class</figcaption>
+                    
+                    </figure>
                     <aside>
                         <p>There are 5 levels in Japanese proficiency test: N5 ,N4 ,N3 ,N2 ,N1. N1 is the highest</p>
                     </aside>
                 </dl>
-            </section>
+            </div>
             <hr>
-            <section>
-                <h2>Experiences</h2>
-                <dl>
-                    <dt>Freelancing</dt>
-                    <dd>I did several Web design, Data Analysis, Machine Learning, ROS(Robot Operating System) jobs on Upwork and Fivver</dd>
-                    <dt>Internship</dt>
-                    <dd>I got my internship at Viettel as a Data Analysis</dd>
+            <div class="information">
+                <h2 class="sub-heading">Experiences</h2>
+                <dl class="infor-container">
+                    <dt class="infor-title">Freelancing</dt>
+                    <dd class="infor-data">I did several Web design, Data Analysis, Machine Learning, ROS(Robot Operating System) jobs on Upwork and Fivver</dd>
+                    
+                    <figure class="img-container">
+                        <img id="upwork-logo" src="images/upwork.png" alt="upwork logo">
+                    </figure>
+
+                    <dt class="infor-title">Internship</dt>
+                    <dd class="infor-data">I got my internship at Viettel as a Data Analyst</dd>
+
+                    <figure class="img-container">
+                        <img id="viettel-dac-logo" src="images/ViettelDAC.png" alt="Viettel DAC logo">
+                    </figure>
+
+                    <aside>
+                        <p>DAC(Data Analytics Center) is a new center of Viettel established in 2018</p>
+                    </aside>
                 </dl>
-            </section>
+            </div>
             <hr>
-            <section>
-                <h2>Awards</h2>
-                <dl>
-                    <dt>Leetcode</dt>
-                    <dd>I won a few Contest on Leetcode challenges</dd>
-                    <aside></aside>
-                    <dt>Kaggle</dt>
-                    <dd>I got silver medals from several Vision Machine Learning Conpetions</dd>
-                    <dt>Akira Awards</dt>
-                    <dd>I received my schoolarship from Akira Education for my N2's certificate</dd>
+            <div class="information">
+                <h2 class ="sub-heading">Awards</h2>
+                <dl class="infor-container">
+                    <dt class="infor-title">Leetcode</dt>
+                    <dd class="infor-data">I won a few Contest on Leetcode challenges</dd>
+
+                    <figure class="img-container">
+                        <img id="leetcode-logo" src="images/leetcode.jpg" alt="leetcode logo">
+                    </figure>
+
+                    <dt class="infor-title">Kaggle</dt>
+                    <dd class="infor-data">I got silver medals from several Vision Machine Learning Conpetions</dd>
+
+                    <figure class="img-container">
+                        <img id="kaggle-logo" src="images/Kaggle_logo.png" alt="kaggle logo">
+                    </figure>
+
+                    <dt class="infor-title">Akira Awards</dt>
+                    <dd class="infor-data">I received my schoolarship from Akira Education for my N2's certificate</dd>
+                    
                 </dl>
-            </section>
+            </div>
+            <hr>
+            <footer>
+                <div>All right reserved 2022</div>
+                <div id="footer-container">
+                    <nav>
+                        <ul id="contact-list">
+                            <li class="contact-items"><a href="https://www.facebook.com/minh.vuviet.75">Facebook</a></li>
+                            <li class="contact-items"><a href="https://www.instagram.com/yusa.namu/">Instagram</a></li>
+                            <li class="contact-items"><a href="https://github.com/minhboro197">Git</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
         </main>
     </body>
 </html>
